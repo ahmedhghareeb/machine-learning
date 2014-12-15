@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Machine Learning Project</title>
+</head>
+<body>
+<p>The Groupware Weightlifting dataset is a set of 19662 observations by several weightlifters. The weightlifters
+ were asked to perform their operations in one of five different manners while wearing tracking monitors. The 
+purpose of this project is to use data from the monitors to predict in which manner the athlete performed the 
+operation. The different manners of performing the operations make up the "classe" variable in the dataset. </p>
+
+<p>The method chosen for this project was random forests, a method which consists of creating multiple decision trees 
+from the variables in the dataset and comparing the various decision trees to determine the best predictors in the 
+set. The variables which were present in all the test cases were used for building the model. Attempts to run 
+random forests using the complete dataset exhaused the memory, so a subset of every tenth observation was used. 
+Code for this operation is found in the attached RData file. The final result included 52 predictor variables. 
+The relative importance of the variables is shown in Plot 1.</p>
+
+<p>The final model had an accuracy of 0.904 and kappa of 0.878, so sample error should be about 10%. The model 
+correctly predicted all 20 test cases. Plot 2 shows the relationship between the 8 most significant variables and
+ the classes for the exercise movements. 
+</body>
+</html>
